@@ -20,4 +20,9 @@ jobs:
       with:
         name: app-armeabi-v7a-release-unsigned.apk
         path: app/build/outputs/apk/common/release/app-common-armeabi-v7a-release-unsigned.apk
+    - name: Upload apk arm64
+      uses: actions/upload-artifact@v1
+      with:
+        name: app-coolapk-arm64-v8a-release-unsigned.apk
+        path: app/build/outputs/apk/coolapk/release/app-coolapk-arm64-v8a-release-unsigned.apk
 
